@@ -51,4 +51,8 @@ public class Blackbox {
     void record() {
         record(true,true,5);
     }
+
+    static void callServiceCenter() {
+        System.out.println("서비스센터 1588-0000 으로 연결합니다.");
+    }
 }
