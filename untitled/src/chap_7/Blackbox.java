@@ -9,6 +9,24 @@ public class Blackbox {
     String resolution;
     int price;
     String color;
+    int serialNumber;
+    static int counter;
+
+    Blackbox() {
+        System.out.println("기본 생성자 호출");
+        this.serialNumber = ++counter;
+        System.out.println("시리얼 넘버를 발급 받았습니다.");
+    }
+
+    Blackbox(String modelName,String resolution, int price, String color) {
+        this();
+
+        System.out.println("사용자 정의 생성자 호출");
+        this.modelName = modelName;
+        this.resolution = resolution;
+        this.price = price;
+        this.color = color;
+    }
 
     // class 변수 ( static 있는 변수 )
     // 해당 class 로부터 만들어지는 모든 객체에 동일하게 적용된다.
