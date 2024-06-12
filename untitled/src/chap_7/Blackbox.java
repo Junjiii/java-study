@@ -13,19 +13,19 @@ public class Blackbox {
     static int counter;
 
     Blackbox() {
-        System.out.println("기본 생성자 호출");
-        this.serialNumber = ++counter;
-        System.out.println("시리얼 넘버를 발급 받았습니다.");
+//        System.out.println("기본 생성자 호출");
+//        this.serialNumber = ++counter;
+//        System.out.println("시리얼 넘버를 발급 받았습니다.");
     }
 
     Blackbox(String modelName,String resolution, int price, String color) {
-        this();
-
-        System.out.println("사용자 정의 생성자 호출");
-        this.modelName = modelName;
-        this.resolution = resolution;
-        this.price = price;
-        this.color = color;
+//        this();
+//
+//        System.out.println("사용자 정의 생성자 호출");
+//        this.modelName = modelName;
+//        this.resolution = resolution;
+//        this.price = price;
+//        this.color = color;
     }
 
     // class 변수 ( static 있는 변수 )
@@ -76,5 +76,44 @@ public class Blackbox {
 
     void appendModelName(String modelName) {
         this.modelName += modelName;
+    }
+
+    // Getter & Setter
+    String getModelName() {
+        return modelName;
+    }
+    void setModelName(String modelName) {
+        this.modelName = modelName;
+    }
+
+    String getResolution() {
+        if(resolution == null || resolution.isEmpty()) {
+            return "판매자에게 문의하세요.";
+        }
+        return resolution;
+    }
+
+    void setResolution(String resolution) {
+        this.resolution = resolution;
+    }
+
+    int getPrice() {
+        return price;
+    }
+
+    void setPrice(int price) {
+        if(price < 100000) {
+            this.price = 100000;
+        } else {
+            this.price = price;
+        }
+    }
+
+    String getColor() {
+        return color;
+    }
+
+    void setColor(String color) {
+        this.color = color;
     }
 }
