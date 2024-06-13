@@ -16,4 +16,8 @@ public class Camera {
         // 동영상 촬영
         System.out.println("동영상을 녹화합니다.");
     }
+
+    public void showMainFeature() {
+        System.out.println(this.name + "의 주요기능 : 사진 촬영, 동영상 녹화");
+    }
 }
