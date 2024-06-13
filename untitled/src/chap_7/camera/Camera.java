@@ -1,0 +1,19 @@
+package chap_7.camera;
+
+public class Camera {
+    public String name;
+
+    public Camera() {
+        this.name = "카메라";
+    }
+
+    public void takePicture() {
+        // 사진 촬영
+        System.out.println("사진을 활영합니다.");
+    }
+
+    public void recordVideo() {
+        // 동영상 촬영
+        System.out.println("동영상을 녹화합니다.");
+    }
+}
