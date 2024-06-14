@@ -1,5 +1,6 @@
 package chap_7.camera;
 
+// SpeedCam is a Camera (IS-A 관계)
 public class SpeedCam extends Camera{
 
     public SpeedCam() {
