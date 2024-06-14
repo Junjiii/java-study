@@ -4,7 +4,7 @@ package chap_7.camera;
 public class SpeedCam extends Camera{
 
     public SpeedCam() {
-        this.name = "과속단속 카메라";
+        super("과속단속 카메라");
     }
 
     public void checkSpeed() {
