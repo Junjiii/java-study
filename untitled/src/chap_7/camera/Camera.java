@@ -20,7 +20,7 @@ public class Camera {
 
     public void recordVideo() {
         // 동영상 촬영
-        System.out.println("동영상을 녹화합니다.");
+        System.out.println(this.name + " : 동영상을 녹화합니다.");
     }
 
     public void showMainFeature() {
