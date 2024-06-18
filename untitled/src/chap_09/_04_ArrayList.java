@@ -1,7 +1,9 @@
 package chap_09;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.List;
 
 public class _04_ArrayList {
     public static void main(String[] args) {
@@ -12,7 +14,7 @@ public class _04_ArrayList {
 //        array[1] = 2;
 //        array[2] = 3;
 
-        ArrayList<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>();
 
         // 데이터 추가
         list.add("유재석");
@@ -20,6 +22,7 @@ public class _04_ArrayList {
         list.add("김종국");
         list.add("박명수");
         list.add("강호동");
+//        list = Arrays.asList("유재석","조세호","김종국","박명수","강호동");
 
         System.out.println(list);
 
